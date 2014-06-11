@@ -1,0 +1,16 @@
+{
+  "name": "angular-sticky-footer",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.2",
+
+    "jquery": "~1.10"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
