@@ -4,7 +4,7 @@
   "dependencies": {
     "angular": "~1.2",
 
-    "jquery": "~1.10"
+    "jquery": ">=1.10"
   },
   "ignore": [
     "**/.*",
