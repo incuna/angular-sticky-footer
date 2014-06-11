@@ -11,13 +11,17 @@
                 link: function (scope, iElement, iAttrs) {
                     var stickyFooterWrapper = $(iAttrs.stickyFooter);
 
+                    // Quite often you will occur a few wrapping `<div>`s in the
+                    // top level of your DOM, so we need to set the height
+                    // to be 100% on each of those. This will also set it on
+                    // the `<html>` and `<body>`.
                     stickyFooterWrapper.parents().css('height', '100%');
                     stickyFooterWrapper.css({
                         'min-height': '100%',
                         'height': 'auto'
                     });
 
-                    // Append a push div to the wrapper above the stickyFooterWrapper
+                    // Append a pushing div to the stickyFooterWrapper.
                     var stickyFooterPush = $('<div class="push"></div>');
                     stickyFooterWrapper.append(stickyFooterPush);
 
